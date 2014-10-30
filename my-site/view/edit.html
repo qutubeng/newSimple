@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/lib/bootstrap3/css/bootstrap.min.css" >
+		<style type="text/css" title="currentStyle">
+			@import "/lib/datatables/DataTables-1.9.4/media/css/demo_page.css";
+			@import "/lib/datatables/DataTables-1.9.4/media/css/demo_table.css";
+		</style>
+		<link rel="stylesheet" href="/css/styles.css" >
+		<link rel="stylesheet" href="/css/register.css" type="text/css" media="all" />
+		
+	</head>
+	<body>
+	<div class="container hundred">
+			<div class="row">
+				<ol class="breadcrumb">
+				  <li><a href="/index.html">Home</a></li>
+				  <li><a href="/view/register.html">Add employee</a></li>
+				  <li><a href="/view/list.html">List Employee</a></li>
+				</ol>
+			</div>	
+		</div>
+
+ <form class="form-edit" id='form-edit' role="form" action="" method="post">
+   <div class='alert alert-danger' id='error_div' >ok</div> <!-- error message shows here -->
+
+     <div class="form-group">
+  	<label for="exampleInputemployee">First Name</label>
+   <input type="text" class="form-control" id="InputName" name="InputName" placeholder="Employee Name" required>
+	</div>
+	
+	<div class="form-group">
+  	<label for="exampleInputemployee">Last Name</label>
+   <input type="text" class="form-control" id="InputLastName" name="InputLastName" placeholder="Last Name" required>
+	</div>	
+
+	<div class="form-group">
+  	<label for="forAge">Employee Age</label>
+   <input type="number" class="form-control" id="InputAge" name="InputAge" placeholder="Employee Age" min="18" max="60" required>
+	</div>
+	
+	<input type='hidden' id='id'>
+	<div class="form-group">
+  	<label for="forphone">Company</label>
+  	<select id="company" name="company" class="form-control">
+	</select>	
+	</div>
+
+     
+    <button class="btn btn-lg btn-primary btn-block" type="submit" name='sbtn-edit' id='sbtn-edit'><i class="fa fa-key"></i> Edit</button>
+     		
+   </form>
+   	<script src="/lib/jquery/jquery-1.10.2.min.js"></script>
+	<script src="/lib/bootstrap3/js/bootstrap.min.js"></script>
+	<script src="/lib/datatables/DataTables-1.9.4/media/js/jquery.dataTables.min.js"></script>
+	<script src="/js/edit.js"></script>
+	</body>
+</html>

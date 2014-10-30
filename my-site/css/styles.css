@@ -1,0 +1,18 @@
+body{
+	margin-top: 0px;
+}
+.border{ 1px solid #000; }
+
+.hundred{
+	width: 100%; 
+}
+#menu-navbar-collapse-1{
+	margin-right: 20px;
+}
+
+.navbar-brand{ margin: 0; paddding: 0; }
+
+.form-edit {
+	width: 40%;
+	margin: 0 auto;
+}
